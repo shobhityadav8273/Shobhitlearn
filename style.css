@@ -1,0 +1,1139 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7faff;
+    color: #17213c;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    border-bottom: 1px solid #e5eaf2;
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    color: #1d3fd1;
+
+}
+
+
+.logo span {
+
+    color: #683de8;
+
+}
+
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.search-btn,
+.menu-btn {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #eef3ff;
+
+    cursor: pointer;
+
+}
+
+
+/* Search */
+
+.search-btn {
+
+    font-size: 20px;
+
+}
+
+
+/* =========================
+   3 LINE MENU
+========================= */
+
+.menu-btn {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.menu-btn span {
+
+    width: 21px;
+
+    height: 2px;
+
+    background: #1d3fd1;
+
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+
+    position: fixed;
+
+    top: 85px;
+
+    right: 7%;
+
+    width: 190px;
+
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+
+    display: none;
+
+    z-index: 90;
+
+}
+
+
+.menu.show {
+
+    display: block;
+
+}
+
+
+.menu-title {
+
+    color: #8992a7;
+
+    font-size: 12px;
+
+    padding: 8px 12px;
+
+}
+
+
+.menu a {
+
+    display: block;
+
+    padding: 12px;
+
+    text-decoration: none;
+
+    color: #17213c;
+
+    font-weight: bold;
+
+    border-radius: 10px;
+
+}
+
+
+.menu a:hover {
+
+    background: #eef3ff;
+
+    color: #1d3fd1;
+
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+
+    position: fixed;
+
+    top: 75px;
+
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    padding: 18px 7%;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    display: none;
+
+    z-index: 80;
+
+}
+
+
+.search-box.show {
+
+    display: block;
+
+}
+
+
+.search-box input {
+
+    width: calc(100% - 60px);
+
+    padding: 15px;
+
+    border: 1px solid #dbe3f0;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+}
+
+
+.search-box button {
+
+    width: 45px;
+
+    height: 45px;
+
+    margin-left: 5px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+#searchResult {
+
+    margin-top: 12px;
+
+    color: #5e6b83;
+
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 620px;
+
+    padding: 80px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf5ff,
+            #ffffff,
+            #f2edff
+        );
+
+}
+
+
+.hero-content {
+
+    max-width: 620px;
+
+}
+
+
+.small-title {
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    color: #3151dc;
+
+}
+
+
+.hero h1 {
+
+    font-size: 65px;
+
+    line-height: 1.05;
+
+    margin: 18px 0;
+
+    letter-spacing: -3px;
+
+}
+
+
+.hero h1 span {
+
+    color: #5739e6;
+
+}
+
+
+.hero-text {
+
+    font-size: 18px;
+
+    color: #68748b;
+
+    max-width: 550px;
+
+}
+
+
+.buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.primary-btn,
+.secondary-btn {
+
+    padding: 14px 22px;
+
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+.primary-btn {
+
+    background: #2145dd;
+
+    color: white;
+
+}
+
+
+.secondary-btn {
+
+    background: white;
+
+    border: 1px solid #dce4ef;
+
+}
+
+
+/* =========================
+   HERO VISUAL
+========================= */
+
+.hero-image {
+
+    width: 500px;
+
+    height: 450px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.circle {
+
+    width: 380px;
+
+    height: 380px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #5639e8,
+        #18a8e8
+    );
+
+    position: absolute;
+
+}
+
+
+.learning-card {
+
+    width: 380px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.18);
+
+    transform: rotate(-6deg);
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.learning-card p {
+
+    font-size: 11px;
+
+    color: #768097;
+
+    font-weight: bold;
+
+}
+
+
+.learning-card h2 {
+
+    margin: 10px 0 20px;
+
+}
+
+
+.progress {
+
+    width: 100%;
+
+    height: 8px;
+
+    background: #e1e7f3;
+
+    border-radius: 10px;
+
+}
+
+
+.progress div {
+
+    width: 70%;
+
+    height: 100%;
+
+    background: #5139e8;
+
+    border-radius: 10px;
+
+}
+
+
+.learning-card small {
+
+    color: #778299;
+
+    display: block;
+
+    margin: 12px 0;
+
+}
+
+
+.learning-card button {
+
+    border: none;
+
+    background: #2145dd;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+}
+
+
+/* Floating Cards */
+
+.floating-card {
+
+    position: absolute;
+
+    background: white;
+
+    padding: 13px 18px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+
+    z-index: 4;
+
+}
+
+
+.floating-card strong {
+
+    color: #2145dd;
+
+}
+
+
+.floating-card small {
+
+    display: block;
+
+    color: #778299;
+
+    font-size: 10px;
+
+}
+
+
+.card-one {
+
+    top: 50px;
+
+    right: 0;
+
+}
+
+
+.card-two {
+
+    bottom: 55px;
+
+    left: 0;
+
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+
+    display: flex;
+
+    justify-content: center;
+
+    background: white;
+
+}
+
+
+.stats div {
+
+    text-align: center;
+
+    padding: 28px 7%;
+
+    border-right: 1px solid #e6ebf3;
+
+}
+
+
+.stats strong {
+
+    display: block;
+
+    font-size: 28px;
+
+    color: #2145dd;
+
+}
+
+
+.stats span {
+
+    color: #758198;
+
+    font-size: 13px;
+
+}
+
+
+/* =========================
+   COURSES
+========================= */
+
+.courses {
+
+    padding: 90px 7%;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 35px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size: 40px;
+
+    margin-top: 7px;
+
+}
+
+
+.section-heading > p {
+
+    color: #758198;
+
+}
+
+
+.course-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.course-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    border: 1px solid #e4eaf3;
+
+    transition: 0.3s;
+
+}
+
+
+.course-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 40px rgba(30,50,100,0.12);
+
+}
+
+
+.course-card.active {
+
+    background: #2145dd;
+
+    color: white;
+
+}
+
+
+.course-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    display: grid;
+
+    place-items: center;
+
+    background: #edf2ff;
+
+    border-radius: 14px;
+
+    font-size: 23px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.course-card small {
+
+    font-size: 10px;
+
+    color: #748098;
+
+    font-weight: bold;
+
+}
+
+
+.course-card.active small {
+
+    color: #dbe3ff;
+
+}
+
+
+.course-card h3 {
+
+    margin: 8px 0;
+
+    font-size: 20px;
+
+}
+
+
+.course-card p {
+
+    color: #748098;
+
+    font-size: 14px;
+
+    min-height: 65px;
+
+}
+
+
+.course-card.active p {
+
+    color: #dbe3ff;
+
+}
+
+
+.course-card a {
+
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #2145dd;
+
+    font-weight: bold;
+
+}
+
+
+.course-card.active a {
+
+    color: white;
+
+}
+
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz {
+
+    margin: 0 7% 80px;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #1d3fd0,
+            #673bea
+        );
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.quiz h2 {
+
+    font-size: 40px;
+
+    margin: 7px 0;
+
+}
+
+
+.quiz p {
+
+    color: #dce4ff;
+
+}
+
+
+.quiz button {
+
+    padding: 14px 22px;
+
+    background: white;
+
+    color: #2145dd;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    margin: 0 7% 80px;
+
+    padding: 55px;
+
+    background: #edf4ff;
+
+    border-radius: 25px;
+
+}
+
+
+.about h2 {
+
+    font-size: 40px;
+
+    margin: 10px 0;
+
+}
+
+
+.about > p:last-child {
+
+    color: #68748b;
+
+    max-width: 700px;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 35px 7%;
+
+    background: #111a35;
+
+    color: #aeb8cc;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+footer .logo {
+
+    color: white;
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .hero-content {
+
+        max-width: 700px;
+
+    }
+
+
+    .buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .course-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .section-heading {
+
+        flex-direction: column;
+
+        align-items: start;
+
+        gap: 10px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+
+        padding: 0 5%;
+
+    }
+
+
+    .menu {
+
+        right: 5%;
+
+    }
+
+
+    .search-box {
+
+        padding: 15px 5%;
+
+    }
+
+
+    .hero {
+
+        padding: 55px 5%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 44px;
+
+    }
+
+
+    .hero-image {
+
+        transform: scale(0.75);
+
+        margin: -40px 0;
+
+    }
+
+
+    .stats {
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+
+    .stats div {
+
+        padding: 20px 5px;
+
+    }
+
+
+    .stats strong {
+
+        font-size: 20px;
+
+    }
+
+
+    .stats span {
+
+        font-size: 10px;
+
+    }
+
+
+    .courses {
+
+        padding: 65px 5%;
+
+    }
+
+
+    .course-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .quiz {
+
+        margin: 0 5% 55px;
+
+        padding: 35px 25px;
+
+        flex-direction: column;
+
+        align-items: start;
+
+    }
+
+
+    .quiz h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .about {
+
+        margin: 0 5% 55px;
+
+        padding: 35px 25px;
+
+    }
+
+
+    .about h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    footer {
+
+        padding: 30px 5%;
+
+        flex-direction: column;
+
+        align-items: start;
+
+        gap: 15px;
+
+    }
+
+}
